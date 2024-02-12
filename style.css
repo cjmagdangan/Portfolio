@@ -1,0 +1,47 @@
+body{
+    background-color:#dce1e6;
+}
+.container{
+    width: 50rem;
+    height: 50rem;
+    margin: auto;
+    color: black;
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturation(180%);
+    background-color:white;
+    border-radius: 10px;
+    border-style:groove;
+}
+.info{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.detail{
+    margin-left: 30px;
+}
+
+.right-side{
+    margin-top: -218px;
+    margin-left: 70%;
+}
+.label{
+    color: gray;
+}
+
+p.info{
+    color: slategray;
+    margin-top: -1%;
+}
+img.info{
+    width: 100px;
+    height: 100px;
+border-radius: 50px;
+border-style:solid;
+
+}
+
+a{
+    text-decoration: none;
+    
+}
+
