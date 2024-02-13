@@ -10,6 +10,7 @@ body{
     background-color:white;
     border-radius: 10px;
     border-style:groove;
+background-attachment:fixed;
 }
 .info{
     margin-left: 30px;
