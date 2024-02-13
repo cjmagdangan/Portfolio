@@ -7,6 +7,14 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <div class="skills">
+        <div class="grid-item"><img src="java.png" alt="java"></div>
+        <div class="grid-item"><img src="php.png" alt="php"></div>
+        <div class="grid-item"><img src="html.png" alt="html"></div>  
+        <div class="grid-item"><img src="css.png" alt="css"></div>
+        <div class="grid-item"><img src="js.png" alt="javascript"></div>
+        <div class="grid-item"><img src="mysql.png" alt="mysql"></div>   
+      </div>
     <div class="container">
          <img src="myPhoto.jpeg" alt="My Photo" class="info">
          <h3 class="info">Christian Jhomar Magdangan</h3>
@@ -14,13 +22,39 @@
     <p class="detail">I am Christian Jhomar Magdangan, 21 years of age.<br> A software developer from Cavite, Philippines</p>
     <div class="right-side">
         <p class="label">Resume</p>
-        <a href="Resume_Magdangan.html">See Resume</a>
+        <a href="Resume_Magdangan.html" target="_blank">See Resume</a>
         <p class="label">Email</p>
         <p>cjmagdangan.cm@gmail.com</p>
         <p class="label">Mobile Number</p>
         <p>09773423050</p>
         <p class="label">Socials</p>
+        <a href="https://www.linkedin.com/in/christian-jhomar-magdangan-1b00502b4/" target="_blank">LinkedIn</a>
     </div>
+    <button class="button" onclick="certificates()">Certificates</button>
+    <button class="button" onclick="projects()">Projects</button>
+
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+
+    <p id="hello"></p>
+
+    <script>
+        function certificates(){
+            document.getElementById("text1").innerHTML = "<a href='Java_certificate.jpg' target='_blank'>Java Certificate</a>"
+            document.getElementById("text2").innerHTML = "<a href='Christian Magdangan_Php.pdf' target='_blank'>Php Certificate</a>"
+            document.getElementById("text3").innerHTML = "<a href='Christian Magdangan_JavaScript.pdf' target='_blank'>JavaScript Certificate</a>"
+            document.getElementById("hello").innerHTML="<p id='text3' hidden</p>"
+        }
+
+        function projects() {
+            document.getElementById("hello").innerHTML ="Hello"
+            document.getElementById("text1").innerHTML = "<p id='text1' hidden</p>"
+            document.getElementById("text2").innerHTML = "<p id='text2' hidden</p>"
+            document.getElementById("text3").innerHTML = "<p id='text3' hidden</p>"
+        }
+    </script>
          </div>
+
 </body>
 </html>
