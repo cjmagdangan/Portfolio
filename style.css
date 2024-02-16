@@ -1,28 +1,25 @@
 body{
     background-color:#dce1e6;
+
+
 }
-.container{
-    width:50rem;
-    height: 50rem;
-    margin: auto;
-    margin-top: -330px;
-    color: black;
-    background-color:white;
-    border-radius: 10px;
-    border-style:groove;
-background-attachment:fixed;
+.left-side{
+    float: left;
+    text-align: center;
+    padding: 50px;
 }
-.info{
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.detail{
-    margin-left: 30px;
+.center{
+    display: inline-block;
+    padding: 50px;
+
 }
 
+
 .right-side{
-    margin-top: -218px;
-    margin-left: 70%;
+
+display: inline-block;
+padding: 50px;
+
 }
 .label{
     color: gray;
@@ -31,6 +28,8 @@ background-attachment:fixed;
 p.info{
     color: slategray;
     margin-top: -1%;
+    
+
 }
 img.info{
     width: 100px;
@@ -49,8 +48,7 @@ a{
 .skills {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 50px;
-    width:10rem;
+    margin-top: -30px;
   }
 
   .grid-item {
