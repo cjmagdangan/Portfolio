@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
       <div class="center">
          <img src="myPhoto.jpeg" alt="My Photo" class="info">
          <h3>Christian Jhomar Magdangan</h3>
-    <p class="info">Software Developer</p>
+    <p>Software Developer</p>
     <p>I am Christian Jhomar Magdangan, 21 years of age.<br> A software developer from Cavite, Philippines</p>
     </div>
 
@@ -46,19 +46,18 @@
          <p id="text2"></p>
          <p id="text3"></p>
      
-         <div class="projects">
-         <p id="Capstone"></p>
-        </div>
+         <p id="hello"></p>
+     
          <script>
              function certificates(){
                  document.getElementById("text1").innerHTML = "<a href='Java_certificate.jpg' target='_blank'>Java Certificate</a>"
                  document.getElementById("text2").innerHTML = "<a href='Christian Magdangan_Php.pdf' target='_blank'>Php Certificate</a>"
                  document.getElementById("text3").innerHTML = "<a href='Christian Magdangan_JavaScript.pdf' target='_blank'>JavaScript Certificate</a>"
-                 document.getElementById("Capstone").innerHTML="<p id='text3' hidden</p>"
+                 document.getElementById("hello").innerHTML="<p id='text3' hidden</p>"
              }
      
              function projects() {
-                 document.getElementById("Capstone").innerHTML ="<a href='https://stiso.000webhostapp.com/welcome.php' target='_blank'>Capstone Project <br><sub>(PHP,HTML,CSS,JS)</sub><hr></a>"
+                 document.getElementById("hello").innerHTML ="Hello"
                  document.getElementById("text1").innerHTML = "<p id='text1' hidden</p>"
                  document.getElementById("text2").innerHTML = "<p id='text2' hidden</p>"
                  document.getElementById("text3").innerHTML = "<p id='text3' hidden</p>"
