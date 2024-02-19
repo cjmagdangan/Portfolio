@@ -70,3 +70,27 @@ img{
     background-color: lightgrey;
     font-size: 19px;
 }
+
+
+@media only screen and (max-width:768px){
+    #main{display: flex;
+        flex-direction: column;
+    }
+    #num1{
+        order: 1;
+    }
+    #num2{
+        order: 2;
+    }
+    #num3{
+        order: 3;
+    }
+    #num4{
+        order: 4;
+    }
+    
+}
+
+
+
+

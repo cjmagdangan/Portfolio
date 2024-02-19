@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <style>
+    html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#sidebar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+h2 {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#documentation h2 {
+  text-align: left;
+  margin: 0px;
+}
+
+#sidebar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#sidebar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#sidebar .nav-item {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#documentation {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+pre {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.hscroll {
+  overflow-x: auto;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #sidebar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #sidebar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #documentation {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #documentation {
+    margin-left: -10px;
+  }
+}
+.numguesser{
+  width: 500px;
+}
+.checkerswapper{
+  width: 500px;
+}
+.colorgame{
+  width: 500px;
+}
+</style>
+
+</head>
+<body>
+    <nav id="sidebar">
+      <h2>School Activites</h2>
+      <ul>
+        <li><a class="nav-item" href="#Introduction">Welcome</a></li>
+        <li>
+          <a class="nav-item" href="#NumberFinder">Number Finder</a>
+        </li>
+        <li>
+          <a class="nav-item" href="#CheckerSwapper">Checker Swapper</a>
+        </li>
+        <li><a class="nav-item" href="#ColorGame">Color Game</a></li>
+        <!--
+        <li><a class="nav-item" href="#html_heading">HTML Heading</a></li>
+        <li>
+          <a class="nav-item" href="#html_paragraph">HTML Paragraph</a>
+        </li>
+        <li><a class="nav-item" href="#html_style">HTML Style</a></li>
+        <li><a class="nav-item" href="#html_formatting">HTML Formatting</a></li>
+        <li><a class="nav-item" href="#reference">Reference</a></li>
+        -->
+      </ul>
+    </nav>
+    <main id="documentation">
+      <section id="Introduction">
+        <h2>Welcome</h2>
+        <article>
+          <p>
+            This webpage allows me to document some of my non-web-based applications that I created for my school activities. These programs were either created with Java, C#, or Python. Doing school activities and tasks where I'm going to create a program or application has allowed me to learn more about coding. Experience or lots of coding exposure is needed for a person to learn coding. I present to you screenshots of the outputs of my school tasks here on my website and the source codes of my projects that you can run when you have a <a href="https://replit.com/" target="_blank">Replit</a> account or reuse for your own apps.
+          </p>          
+        </article>
+      </section>
+      <br>
+      <section id="NumberFinder">
+        <h2>Number Finder</h2>
+        <small>Programming Languge: <b>Java</b></small>
+        <article>
+          <p>
+            This desktop app is a simple game that allows users to guess a number within 1 to 9. The player has unlimited attempts until they have guessed the right number. You will just have to find the right number that is being asked to be predicted randomly.  
+          </p>
+
+          <p>
+            You can run or try this on my <a href="https://replit.com/@cjmagdangancm/Number-Guesser" target="_blank">Replit</a>
+          </p>
+          <small>(Note: You should have a replit accout to fork and run this)</small>
+<br>
+  
+          <img src="LabExer7A_Output1.png" alt="Number Finder" class="numguesser">
+          <img src="LabExer7A_Output2.png" alt="Number Finder" class="numguesser">
+        </article>
+      </section>
+      <br>
+
+
+      <section id="CheckerSwapper">
+        <h2>Checker Swapper</h2>
+        <small>Programming Languge: <b>Java</b></small>
+        <article>
+          <p>
+            A simple desktop app that checks if both strings or texts inside the text field are the same or not. It also has a button that swaps the text from text boxes 1 to 2 and 2 to 1 and can also be checked to see if they are equal. The text label prints that the strings are the same if the system detects that both fields have the same values. 
+          </p>
+
+          <p>
+            You can run or try this on my <a href="https://replit.com/@cjmagdangancm/Checker-Swapper" target="_blank">Replit</a>
+          </p>
+          <small>(Note: You should have a replit accout to fork and run this)</small>
+<br>
+
+          <img src="LabExer7B_Output1(2).png" alt="Checker Swapper" class="checkerswapper">
+          <img src="LabExer7B_Output2(2).png" alt="Checker Swapper" class="checkerswapper">
+          <img src="LabExer7B_Output3(2).png" alt="Checker Swapper" class="checkerswapper">
+        </article>
+      </section>
+      <br>
+
+
+      <section id="ColorGame">
+        <h2>Color Game</h2>
+        <small>Programming Languge: <b>Java</b></small>
+
+        <article>
+          <p>
+            I created this somewhat unfinished and messy desktop app for fun. It is a color game similar to a public fair or carnival that was enjoyed by Filipinos. The difference is that the app's output is only one color, and there are only three (3) choices of colors. Not like the traditional three (3) outputs or results and six (6) colors to be chosen. I added a bit of a login frame that allows the player to type their name and choose a background color according to their liking before a player plays or gets in, for him or her to be greeted with a welcome. 
+          </p>
+          <p>
+            You can run or try this on my <a href="https://replit.com/@cjmagdangancm/Color-Game" target="_blank">Replit</a>
+          </p>
+          <small>(Note: You should have a replit accout to fork and run this)</small>
+<br>
+          <img src="TaskPerf7_Output1.png" alt="Color Game" class="colorgame">
+          <img src="TaskPerf7_Output2.png" alt="Color Game" class="colorgame">
+          <img src="TaskPerf7_Output3.png" alt="Color Game" class="colorgame">
+          <img src="TaskPerf7_Output4.png" alt="Color Game" class="colorgame">
+          <img src="TaskPerf7_Output5.png" alt="Color Game" class="colorgame">
+          <img src="TaskPerf7_Output6.png" alt="Color Game" class="colorgame">
+
+
+        </article>
+      </section>
+      <br>
+<!--
+      <section id="html_heading">
+        <h2>HTML Heading</h2>
+        <p>
+          To display the section heading, title or subtitle we can use the HTML
+          heading tags. In HTML 5 we have 6 heading tags start from &lt;h1&gt;
+          up to &lt;h6&gt;, where &lt;h1&gt; specify the largest heading and
+          &lt;h6&gt; represent the smallest or sub heading. If the content is
+          specified by heading tags, then it would be displayed large and bold
+          as compared to other text content present on the web-page.
+          <strong> Example </strong>
+        </p>
+        <pre>
+  &lt;h1&gt;First Heading &lt;/h1&gt;
+              &lt;h2&gt;Second Heading &lt;/h2&gt;
+              &lt;h3&gt;Third Heading &lt;/h3&gt;
+              &lt;h4&gt;Forth Heading &lt;/h4&gt;
+              &lt;h5&gt;Fifth Heading &lt;/h5&gt;
+              &lt;h6&gt;Sixth Heading &lt;/h6&gt;</pre>
+      </section>
+      <section id="html_paragraph">
+        <h2>HTML Paragraph</h2>
+        <article>
+          <p>
+            In HTML paragraphs can be defined using &lt;p&gt; element. Paragraph
+            text always starts from a new line, the browser parsed the &lt;p&gt;
+            tag and automatically add some margin and white space after the end
+            &lt;/p&gt; tag.
+          </p>
+          <pre>
+  &lt;p&gt; Hello! and Welcome to TechGeekBuzz &lt;/p&gt;
+                  &lt;p&gt; Here you get to know all about the latest technology. &lt;/p&gt;</pre>
+        </article>
+      </section>
+      <section id="html_style">
+        <h2>HTML Style</h2>
+        <article>
+          <p>
+            Every browser has a specific engine that parses the HTML document and displays a default style of the page content.
+          </p>
+          <pre>&lt;body style="background-color:yellow;"&gt;
+  
+                  &lt;h1&gt;TechGeekBuzz&lt;/h1&gt;
+                  &lt;p&gt;Welcome to TechGeekBuzz.&lt;/p&gt;
+                  
+                  &lt;/body&gt;</pre>
+        </article>
+      </section>
+      <section id="html_formatting">
+        <h2>HTML Formatting</h2>
+        <article>
+          <p>
+            In HTML, we have many special elements that can provide special meaning to text content.
+          </p>
+          <div class="hscroll">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="https://www.techgeekbuzz.com/html-elements/">
+                      HTML Elements
+                    </a>
+                  </td>
+                  <td>
+                    Description
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &lt;b&gt;
+                  </td>
+                  <td>
+                    Bold the text
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &lt;strong&gt;
+                  </td>
+                  <td>
+                    An alternative for &lt;b&gt;, which tell that this text is essential.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &lt;i&gt;
+                  </td>
+                  <td>
+                    Italic the text
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &lt;em&gt;
+                  </td>
+                  <td>
+                    Similar to italic but used when we want to emphasize the text.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &lt;mark&gt;
+                  </td>
+                  <td>
+                    It marks the text with a default "yellow" background colour
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &lt;small&gt;
+                  </td>
+                  <td>
+                    Decrease the text size
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &lt;del&gt;
+                  </td>
+                  <td>
+                    It prints a cross line over the text.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &lt;ins&gt;
+                  </td>
+                  <td>
+                    Represents the inserted text by putting an underline.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &lt;sub&gt;
+                  </td>
+                  <td>
+                    This element is used to display the subscript.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &lt;sup&gt;
+                  </td>
+                  <td>
+                    It can make a text superscript.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+  
+      <section id="reference">
+        <h2>Reference</h2>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a href="https://www.techgeekbuzz.com/tutorial/html/" target="_blank">HTML Tutorial</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      -->
+    </main>
+
+  </body>
+</html>

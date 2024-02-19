@@ -7,62 +7,69 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="left-side">
+    <div id="main">
+        <div class="left-side" id="num3">
         <h3>Skills</h3>
-    <div class="skills">
-        <div class="grid-item"><img src="java.png" alt="java"></div>
-        <div class="grid-item"><img src="php.png" alt="php"></div>
-        <div class="grid-item"><img src="html.png" alt="html"></div>  
-        <div class="grid-item"><img src="css.png" alt="css"></div>
-        <div class="grid-item"><img src="js.png" alt="javascript"></div>
-        <div class="grid-item"><img src="mysql.png" alt="mysql"></div>   
-      </div>
-    </div>
+            <div class="skills">
+                <div class="grid-item"><img src="java.png" alt="java"></div>
+                <div class="grid-item"><img src="php.png" alt="php"></div>
+                <div class="grid-item"><img src="html.png" alt="html"></div>  
+                <div class="grid-item"><img src="css.png" alt="css"></div>
+                <div class="grid-item"><img src="js.png" alt="javascript"></div>
+                <div class="grid-item"><img src="mysql.png" alt="mysql"></div>   
+            </div>
+        </div>
 
-      <div class="center">
-         <img src="myPhoto.jpeg" alt="My Photo" class="info">
-         <h3>Christian Jhomar Magdangan</h3>
-    <p class="info">Software Developer</p>
-    <p>I am Christian Jhomar Magdangan, 21 years of age.<br> A software developer from Cavite, Philippines</p>
-    </div>
+        <div class="center" id="num1">
+            <img src="myPhoto.jpeg" alt="My Photo" class="info">
+            <h3>Christian Jhomar Magdangan</h3>
+            <p class="info">Software Developer</p>
+            <p>I am Christian Jhomar Magdangan, 21 years of age.<br> A software and a web developer from Cavite, Philippines</p>
+        </div>
 
-    <div class="right-side">
-        <p class="label">Resume</p>
-        <a href="Resume_Magdangan.html" target="_blank">See Resume</a>
-        <p class="label">Email</p>
-        <p>cjmagdangan.cm@gmail.com</p>
-        <p class="label">Mobile Number</p>
-        <p>09773423050</p>
-        <p class="label">Socials</p>
-        <a href="https://www.linkedin.com/in/christian-jhomar-magdangan-1b00502b4/" target="_blank">LinkedIn</a><br>
-         </div>
+        <div class="right-side" id="num2">
+            <p class="label">Resume</p>
+            <a href="Resume_Magdangan.html" target="_blank">See Resume</a>
+            <p class="label">Email</p>
+            <p>cjmagdangan.cm@gmail.com</p>
+            <p class="label">Mobile Number</p>
+            <p>09773423050</p>
+            <p class="label">Socials</p>
+            <a href="https://www.linkedin.com/in/christian-jhomar-magdangan-1b00502b4/" target="_blank">LinkedIn</a><br>
+        </div>
 
-         
+
          <br>
-         <button class="button" onclick="certificates()">Certificates</button>
-         <button class="button" onclick="projects()">Projects</button>
+        <div id="num4">
+            <button class="button" onclick="certificates()">Certificates</button>
+            <button class="button" onclick="projects()">Projects</button>
      
-         <p id="text1"></p>
-         <p id="text2"></p>
-         <p id="text3"></p>
+            <p id="text1"></p>
+            <p id="text2"></p>
+            <p id="text3"></p>
      
-         <div class="projects">
-         <p id="Capstone"></p>
+            <div class="projects">
+                <p id="Capstone"></p>
+                <p id="Documentation"></p>
+            </div>
         </div>
          <script>
              function certificates(){
                  document.getElementById("text1").innerHTML = "<a href='Java_certificate.jpg' target='_blank'>Java Certificate</a>"
                  document.getElementById("text2").innerHTML = "<a href='Christian Magdangan_Php.pdf' target='_blank'>Php Certificate</a>"
                  document.getElementById("text3").innerHTML = "<a href='Christian Magdangan_JavaScript.pdf' target='_blank'>JavaScript Certificate</a>"
-                 document.getElementById("Capstone").innerHTML="<p id='text3' hidden</p>"
+                 document.getElementById("Capstone").innerHTML="<p id='Capstone' hidden</p>"
+                 document.getElementById("Documentation").innerHTML="<p id='Documentation' hidden</p>"
              }
      
              function projects() {
                  document.getElementById("Capstone").innerHTML ="<a href='https://stiso.000webhostapp.com/welcome.php' target='_blank'>Capstone Project <br><sub>(PHP,HTML,CSS,JS)</sub><hr></a>"
+                 document.getElementById("Documentation").innerHTML ="<a href='Documentation/acts.html' target='_blank'>School Activities<br>Documentation<hr></a>"
                  document.getElementById("text1").innerHTML = "<p id='text1' hidden</p>"
                  document.getElementById("text2").innerHTML = "<p id='text2' hidden</p>"
                  document.getElementById("text3").innerHTML = "<p id='text3' hidden</p>"
              }
          </script>
+    </div>
 </body>
 </html>
