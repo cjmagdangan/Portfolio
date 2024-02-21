@@ -60,3 +60,12 @@ button{
     border: 3PX solid;
     width: 50%;
 }
+@media only screen and (max-width:768px){
+    #whole{
+        width:auto;
+    }
+    .head{
+        margin-left: auto;
+        width: auto;
+    }
+}
