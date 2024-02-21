@@ -1,6 +1,7 @@
 if ('speechSynthesis' in window) {
     // Speech Synthesis supported 🎉
-    alert("Available");
+    alert("Your browser supports text to speech!");
+
 
    }else{
      // Speech Synthesis Not Supported 😣
