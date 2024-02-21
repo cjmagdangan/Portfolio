@@ -1,0 +1,62 @@
+body{
+    background-image: linear-gradient(violet, yellow);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+#whole{
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    background-color: chocolate;
+    border-radius: 30px;
+}
+
+.head{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: 120px;
+    
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+    padding:0px;
+    margin: auto;
+    
+}
+#B{
+    text-align: center;
+    font-size: 30px;
+    border: 3PX solid;
+    width: 50%;
+}
+
+#I{
+    text-align: center;
+    font-size: 30px;
+    border: 3PX solid;
+    width: 50%;
+}
+#N{
+    text-align: center;
+    font-size: 30px;
+    border: 3PX solid;
+    width: 50%;
+}
+#G{
+    text-align: center;
+    font-size: 30px;
+    border: 3PX solid;
+    width: 50%;
+}
+#O{
+    text-align: center;
+    font-size: 30px;
+    border: 3PX solid;
+    width: 50%;
+}
