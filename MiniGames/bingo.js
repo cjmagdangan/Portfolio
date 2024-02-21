@@ -1,3 +1,11 @@
+if ('speechSynthesis' in window) {
+    // Speech Synthesis supported 🎉
+    alert("Available");
+
+   }else{
+     // Speech Synthesis Not Supported 😣
+     alert("Sorry, your browser doesn't support text to speech!");
+   }
 let haveIt = [];
 
 function roll() {
