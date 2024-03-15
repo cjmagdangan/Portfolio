@@ -8,6 +8,7 @@ if ('speechSynthesis' in window) {
      alert("Sorry, your browser doesn't support text to speech!");
    }
 let haveIt = [];
+var latest = [];
 
 function roll() {
   
@@ -19,6 +20,12 @@ function roll() {
             h.appendChild(t);
             document.body.appendChild(h);
             haveIt.push(generate);
+                        latest.push(generate);
+
+             document.getElementById("counts").innerHTML = "<p style='color:green'>Last call: <b>"+latest+ "</b></p>";
+            if (latest.length>0) {
+              latest.pop();
+            }
             if (generate<=15) {
                 document.getElementById("B").appendChild(h);
                 var msg = new SpeechSynthesisUtterance();
