@@ -17,6 +17,12 @@ button{
         font-size: large;
 
 }
+#roll{
+    margin-right: 50px;
+}
+#restart{
+    margin-left: 50px;
+}
 
 .head{
     display: grid;
