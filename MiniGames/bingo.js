@@ -102,6 +102,11 @@ function roll() {
                     msg2.text = "Debut";
                   window.speechSynthesis.speak(msg2);
                   }
+                  else if (generate==19) {
+                    var msg2 = new SpeechSynthesisUtterance();
+                    msg2.text = "Covid 19";
+                  window.speechSynthesis.speak(msg2);
+                  }
                   else if (generate==20) {
                     var msg2 = new SpeechSynthesisUtterance();
                     msg2.text = "Binti Malaki";
